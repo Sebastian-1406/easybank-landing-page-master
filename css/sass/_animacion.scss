@@ -1,0 +1,33 @@
+@keyframes desplazarBotton {
+    0% {
+        top: -300px;
+    }
+    100% { 
+        top: 65px;
+    }
+}
+@keyframes desplazarTop {
+    0% {
+        top: 65px;
+    }
+    100% {
+        top: -300px;
+    }
+}
+
+@keyframes giro360 {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes giro180 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}

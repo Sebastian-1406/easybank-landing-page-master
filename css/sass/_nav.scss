@@ -1,0 +1,63 @@
+.contenedor {
+    padding: 0 25px;
+}
+.nav {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $white;
+    position: relative;
+    z-index: 50;
+    &-boton__hamburger {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .icon {
+        animation-name: inherit;
+        animation-duration: 300ms;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+    }
+    &-menu {
+        position: absolute;
+        left: 25px;
+        right: 25px;
+        list-style: none;
+        background: white;
+        box-sizing: 0;
+        border-radius: 7px;
+        padding: 0;
+        text-align: center;
+        padding: 25px 0;
+        top: -320px;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        li {
+            padding: 12px 0;
+            a {
+                text-decoration: none;
+                color: $dark;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }     
+    }
+    &-boton {
+        display: none;
+    }
+
+}
+
+.menu-activo::after {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: -25px;
+    right: -25px;
+    height: 100vh;
+    background: linear-gradient(180deg, $dark 0%, transparent 60%);
+    z-index: -1;
+}

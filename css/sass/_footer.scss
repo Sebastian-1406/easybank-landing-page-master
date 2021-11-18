@@ -1,0 +1,50 @@
+.footer {
+    background: $dark;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    &-contenedor {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .item:last-child {
+            display: block;
+        }
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    &-caja {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            a {
+                text-decoration: none;
+                color: $white;
+            }   
+        }
+        &__redes {
+            display: inline-flex;
+            margin: auto;
+            gap: 15px;
+        }
+        &__info {
+            li {
+                padding: 8px 0;
+            }
+        }
+    }
+    &-copy {
+        margin: 0;
+        color: $gray;
+        font-size: 15px;
+    }
+}

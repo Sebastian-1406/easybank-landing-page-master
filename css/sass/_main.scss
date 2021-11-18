@@ -1,0 +1,64 @@
+.main {
+    h2 {
+        margin-top: 0;
+    }
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        color: $gray;
+    }
+    &-section:first-child {
+        background: $light;        
+        padding: 60px 25px;
+    }
+    &-section:last-child {
+        padding: 85px 25px;
+        background: $white;
+    }
+    &-section__texto {
+        text-align: center;
+    }
+    &-section__titulo {
+        color: $dark;
+        font-weight: 300;
+    }
+    &-section__sub-titulo {
+        color: $dark;
+        font-weight: 300;
+    }
+    .contenedor-card {
+        margin-top: 60px;
+        display: grid;
+        gap: 20px;
+        text-align: center;
+    }
+    .contenedor-noticia {
+        display: grid;
+        gap: 25px;
+        .article {
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #0002;
+            overflow: hidden;
+            &-img {
+                max-width: 100%;
+            }
+            &-texto {
+                text-align: left;
+                padding: 30px;
+                .diario {
+                    font-size: 10px;
+                    color: $gray;
+                }
+                h4 {
+                    margin: 10px 0;
+                }
+                p {
+                    line-height: 20px;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    
+}
+

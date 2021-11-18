@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+@import 'sass/variable';
+@import 'sass/nav';
+@import 'sass/hero';
+@import 'sass/main';
+@import 'sass/footer';
+@import 'sass/components/botones';
+@import 'sass/animacion';
+@import 'sass/resposive';
+
+body {
+    font-family: $font;
+    overflow-x: hidden;
+}

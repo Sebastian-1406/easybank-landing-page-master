@@ -1,0 +1,38 @@
+%boton {
+    width: 165px;
+    height: 45px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+@mixin botones ($bg1, $bg2) {
+    @extend %boton;
+    background: linear-gradient(90deg, $bg1 10%, $bg2 100%);
+    color: white;
+    font-size: 15px;
+}
+
+
+.btn {
+    @include botones ($green, $cyan);
+    &::after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.4);
+        transition: all ease-in-out 500ms;
+    }
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
