@@ -4,6 +4,9 @@
     border: none;
     border-radius: 100px;
     cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center
 }
 @mixin botones ($bg1, $bg2) {
     @extend %boton;
@@ -33,6 +36,7 @@
 }
 
 .btn {
+    display: flex;
     position: relative;
     overflow: hidden;
 }
