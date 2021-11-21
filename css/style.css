@@ -713,6 +713,9 @@ h2 {
   .footer {
     padding: 50px 165px;
   }
+  .footer-caja__redes {
+    margin-top: 30px;
+  }
 }
 
 body {
