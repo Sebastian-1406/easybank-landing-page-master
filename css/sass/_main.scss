@@ -25,6 +25,9 @@
     &-section__sub-titulo {
         color: $dark;
         font-weight: 300;
+        display: block;
+        cursor: pointer;
+        transition: color ease 300ms;
     }
     .contenedor-card {
         margin-top: 60px;

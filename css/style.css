@@ -174,6 +174,10 @@ h2 {
 .main-section__sub-titulo {
   color: #2d314d;
   font-weight: 300;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: color ease 300ms;
+  transition: color ease 300ms;
 }
 
 .main .contenedor-card {
@@ -515,6 +519,9 @@ h2 {
   .main-section__texto {
     text-align: left;
   }
+  .main-section__sub-titulo:hover {
+    color: #31d35c;
+  }
   .main-section:first-child {
     padding: 100px 40px;
   }
@@ -533,9 +540,6 @@ h2 {
     cursor: pointer;
     -webkit-transition: color 300ms ease;
     transition: color 300ms ease;
-  }
-  .main .contenedor-noticia .article-texto h4:hover {
-    color: #31d35c;
   }
   .footer {
     -webkit-box-orient: horizontal;
